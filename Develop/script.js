@@ -1,6 +1,3 @@
-// Assignment code here
-
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
@@ -12,6 +9,11 @@ function writePassword() {
   passwordText.value = password;
 
 }
+//Generator for password
+function generatePassword() {
+var length = parseInt(prompt("How many characters do you want your password to have?"));
+
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
