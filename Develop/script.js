@@ -11,8 +11,13 @@ function writePassword() {
 }
 //Generator for password
 function generatePassword() {
-var length = parseInt(prompt("How many characters do you want your password to have?"));
+var length = parseInt(prompt("How many characters do you want your password to have?(Must be between between 5 and 22)"));
 
+//Sets limit
+if (isNaN(length) || length < 5 || length > 22) {
+alert("Password length must be between between 5 and 22");
+return "";
+}
 
 
 // Add event listener to generate button
