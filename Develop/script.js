@@ -20,5 +20,24 @@ return "";
 }
 
 
+var charecter = "";
+
+//Charecter set up
+if (uppercase) {
+charecter += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+}
+
+if (lowercase) {
+charecter += "abcdefghijklmnopqrstuvwxyz";
+}
+
+if (numbers) {
+charecter += "0123456789";
+}
+
+if (specialChars) {
+charecter += "!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
