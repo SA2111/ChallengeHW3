@@ -19,7 +19,7 @@ alert("Password length must be between between 5 and 22");
 return "";
 }
 
-
+var code = "";
 var charecter = "";
 
 //Charecter set up
@@ -38,6 +38,12 @@ charecter += "0123456789";
 if (specialChars) {
 charecter += "!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 }
+//randomizing
+for (var i = 0; i < length; i++) {
+password += charecter.charAt(Math.floor(Math.random() * charecter.length));
+}
 
+return password;
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
